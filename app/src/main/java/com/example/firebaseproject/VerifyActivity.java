@@ -14,7 +14,7 @@ public class VerifyActivity extends AppCompatActivity {
     private EditText email;
     private EditText pass;
     private Button proceed;
-
+//nan
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
