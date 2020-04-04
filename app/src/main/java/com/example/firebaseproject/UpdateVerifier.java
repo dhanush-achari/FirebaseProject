@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class Verify2Activity extends AppCompatActivity {
+public class UpdateVerifier extends AppCompatActivity {
 
     private EditText email;
     private EditText pass;
@@ -21,7 +21,7 @@ public class Verify2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verify);
 
-        email=findViewById(R.id.email2);
+        email=findViewById(R.id.email1);
         pass = findViewById(R.id.pass2);
         proceed=findViewById(R.id.proceed2);
 
@@ -32,11 +32,11 @@ public class Verify2Activity extends AppCompatActivity {
                 String txt_password=pass.getText().toString();
 
                 if(TextUtils.isEmpty(txt_email) || TextUtils.isEmpty(txt_password)){
-                    Toast.makeText(Verify2Activity.this, "Empty credentials", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(UpdateVerifier.this, "Empty credentials", Toast.LENGTH_SHORT).show();
 
                 }
                 else if(txt_password.length()<6){
-                    Toast.makeText(Verify2Activity.this, "Password too short", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(UpdateVerifier.this, "Password too short", Toast.LENGTH_SHORT).show();
                 }
                 else{
                     verify(txt_email,txt_password);
@@ -50,7 +50,7 @@ public class Verify2Activity extends AppCompatActivity {
         String apass="password";
         if(email.equals(aemail) && password.equals(apass)){
             Toast.makeText(this, "Permission granted", Toast.LENGTH_SHORT).show();
-            startActivity(new Intent(Verify2Activity.this,UpdateActivity.class));
+            startActivity(new Intent(UpdateVerifier.this,InputEid2Activate.class));
         }
         else{
             Toast.makeText(this, "Invalid Credentials", Toast.LENGTH_SHORT).show();

@@ -6,17 +6,17 @@
     android:layout_height="match_parent"
     android:background="#FFC107"
     android:textAlignment="center"
-    tools:context=".UpdateActivity">
+    tools:context=".AddInfo">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="-35dp" />
+        app:layout_constraintGuide_begin="83dp" />
 
     <EditText
-        android:id="@+id/eid22"
+        android:id="@+id/eid1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="83dp"
@@ -25,12 +25,12 @@
         android:ems="10"
         android:hint="EID"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/name22"
+        app:layout_constraintBottom_toTopOf="@+id/name1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/address22"
+        android:id="@+id/address1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="81dp"
@@ -39,13 +39,12 @@
         android:ems="10"
         android:hint="Address"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/email22"
+        app:layout_constraintBottom_toTopOf="@+id/email1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/name22"
+        android:id="@+id/name1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="81dp"
@@ -54,12 +53,12 @@
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/address22"
+        app:layout_constraintBottom_toTopOf="@+id/address1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/email22"
+        android:id="@+id/email1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
@@ -68,12 +67,12 @@
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/number22"
+        app:layout_constraintBottom_toTopOf="@+id/number1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/number22"
+        android:id="@+id/number1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="86dp"
@@ -82,13 +81,13 @@
         android:ems="10"
         android:hint="Contact Number"
         android:inputType="phone"
-        app:layout_constraintBottom_toTopOf="@+id/project22"
+        app:layout_constraintBottom_toTopOf="@+id/project1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/project22"
+        android:id="@+id/project1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="83dp"
@@ -97,12 +96,12 @@
         android:ems="10"
         android:hint="Project"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/dept22"
+        app:layout_constraintBottom_toTopOf="@+id/dept1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/dept22"
+        android:id="@+id/dept1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="83dp"
@@ -141,29 +140,21 @@
         android:layout_marginStart="141dp"
         android:layout_marginEnd="182dp"
         android:layout_marginBottom="99dp"
-        android:text="update"
+        android:text="Update"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/cinzel_decorative"
-        android:text="Add Info"
+        android:text="Update"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/eid22"
+        app:layout_constraintBottom_toTopOf="@+id/eid1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/ret"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Retrive"
-        app:layout_constraintBottom_toTopOf="@+id/add"
-        app:layout_constraintStart_toStartOf="@+id/add" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

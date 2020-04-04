@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".InputIdActivity2"></activity>
-        <activity android:name=".UpdateActivity" />
-        <activity android:name=".Verify2Activity" />
+        <activity android:name=".Update"></activity>
+        <activity android:name=".InputEid2Activate" />
+        <activity android:name=".UpdateVerifier" />
         <activity android:name=".StartActivity" />
         <activity android:name=".InputEidActivity" />
         <activity android:name=".Retrive" />
